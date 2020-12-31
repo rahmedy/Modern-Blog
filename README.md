@@ -1,6 +1,7 @@
 # Modern-Blog
       
-   
+ ![License](images/demo.png)
+ ![License](images/demo2.png)
 ## Description
 Front End design for a blog that is mobile responsive created with HTML and CSS
 ## Table of Contents
