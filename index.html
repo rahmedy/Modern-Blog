@@ -15,14 +15,14 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/788px-Playstation_logo_colour.svg.png"
                 class="logo">
             <nav>
-                <ul>
+                <ul id="menuList">
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Posts</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <i class="fa fa-bars" id="icon"></i>
+            <i class="fa fa-bars icon" onclick="togglemenu()" ></i>
         </div>
 
         <div class="row">
@@ -50,6 +50,24 @@
         </div>
     </div>
 
+
+        <script>
+
+            var menuList =document.getElementById("menuList")
+
+            menuList.style.maxHeight = "0px"
+
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "130px"
+                }
+                else {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+
+
+        </script>
 
 </body>
 

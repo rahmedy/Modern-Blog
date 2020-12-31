@@ -25,9 +25,12 @@
     margin: 30px 0;
 }
 
-#icon {
+.icon {
     width: 25px;
     cursor: pointer;
+    color: magenta;
+    display: none;
+
 }
 
 nav {
@@ -92,7 +95,7 @@ button {
     padding: 12px 10px;
     outline: none;
     color: #fff;
-    background: linear-gradient(to right, #fb5283,#ff3527);
+    background: linear-gradient(to right, #fb5283, #ff3527);
     border-radius: 6px;
     cursor: pointer;
     transition: width 0.5s;
@@ -118,7 +121,7 @@ button:hover {
     content: "";
     width: 10px;
     height: 57%;
-    background: linear-gradient(#ff469f,#ff6062);
+    background: linear-gradient(#ff469f, #ff6062);
     position: absolute;
     left: -40px;
     top: 8px;
@@ -155,12 +158,12 @@ button:hover {
 
 .add-btn {
     text-align: center;
-    color: #fff;
+    color: #000;
     cursor: pointer;
 }
 
 .add-btn p {
- display: inline-block;
+    display: inline-block;
 }
 
 .social i {
@@ -172,4 +175,66 @@ button:hover {
 .social {
     text-align: center;
     font-size: large;
+}
+
+@media only screen and (max-width: 700px) {
+
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col-2 .item {
+        width: 77%
+    }
+
+    .color-box {
+        transform: translateX(75px);
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+    
+    .col-1 h2 {
+        font-size: 35px;
+    }
+
+    .col-1 h3 {
+        font-size: 15px;
+    }
+
 }
