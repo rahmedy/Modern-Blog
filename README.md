@@ -2,7 +2,7 @@
       
    
 ## Description
-Front End design for a blog
+Front End design for a blog that is mobile responsive created with HTML and CSS
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
